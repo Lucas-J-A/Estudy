@@ -495,20 +495,54 @@
 		color: var(--color-white);
 	}
 
-	.btnCobertura {
-		padding: 2px;
-		background: var(--gradient-3)
-	}
-
-	.btnCobertura:hover {
-		padding: 5px;
-
-	}
 
 	.text-principal {
 		margin-top: 5rem;
 		font-size: 4rem;
 	}
+
+
+	/*Card- Header*/
+	.card--beneficio--plano {
+		height: 210px;
+		color: white;
+		background-image: url("../../img/bg-planos.jpg");
+		background-size: cover;
+	}
+
+	.card--beneficio--chip {
+		color: #000000;
+		height: 210px;
+		background-image: url("../../img/bg-viagem.png");
+		overflow: hidden;
+		background-size: 200px;
+		background-position: 180px;
+		background-repeat: no-repeat;
+	}
+
+	.card--beneficio--streaming {
+		color: white;
+		height: 210px;
+		background-image: url("../../img/bg-streaming.png");
+		background-color: #360063;
+		overflow: hidden;
+		background-size: 180px;
+		background-position: 0px;
+		background-repeat: no-repeat;
+	}
+
+	.card--beneficio--plano,
+	.card--beneficio--chip,
+	.card--beneficio--streaming {
+		font-family: var(--font-pop);
+		font-weight: 600;
+		text-align: justify;
+	}
+
+
+
+
+
 
 	.card--beneficio {
 		box-sizing: border-box;
@@ -572,16 +606,17 @@
 		color: var(--color-indigo);
 	}
 
-	.plan__naciona--max {
+	.plan__nacional--max {
 		border-top: solid 1px orangered;
 
 	}
 
-	.plan__naciona--max img {
+	.plan__nacional--max img {
 		margin-top: 6px;
 		background-position: right;
 		width: 5rem;
 		height: auto;
+
 	}
 
 	.preco {
@@ -622,7 +657,35 @@
 		height: 200px;
 	}
 
-	.btn-assinarPlano {
+	.card__header {
+		background: none !important;
+		height: 120px;
+		text-align: center;
+		border: solid 1px white;
+		border-radius: 25px;
+		color: white;
+	}
+
+	.card__header__portabilidade {
+		color: #360063;
+		font-weight: 700;
+		background: var(--color-goldenrod);
+		z-index: 500;
+
+	}
+
+	.card__header__portabilidade::after {
+		content: "";
+		position: absolute;
+		right: -12PX;
+		bottom: 0;
+		height: 70px;
+		width: 15px;
+		background-color: white;
+		z-index: 499;
+	}
+
+	.btn-yellow {
 
 		border-radius: var(--br-5xs);
 		background: linear-gradient(90deg, rgba(231, 154, 0, 1) 0%, rgba(247, 179, 43, 1) 100%);
@@ -680,9 +743,7 @@
 	}
 
 
-	.active {
-		background: none !important;
-	}
+
 
 	.btn:hover {
 
@@ -690,110 +751,20 @@
 
 	}
 
-	.accordion {
-		background: var(--gradient-3);
-		color: black;
-		cursor: pointer;
-		text-align: left;
-		outline: none;
-		font-size: 15px;
-		transition: 0.4s;
-		border: 2px solid;
 
+	/**/
+	.card--img--portabilidade {
+		background-color: var(--color-orangered-100);
 	}
 
-	.active,
-	.accordion:hover {
-		background: var(--gradient-3);
-	}
-
-	.accordion:after {
-		content: '\002B';
-		color: black;
-		font-weight: bold;
-		float: right;
-		margin-left: 5px;
-	}
-
-	.active:after {
-		content: "\2212";
-	}
-
-	.panel {
-		background-color: white;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.2s ease-out;
-		border: 1px solid;
+	.card--img--canaiswatch,
+	.card--img--portabilidade {
+		border-radius: 25px;
 	}
 
 
 
 
-
-
-
-	.oculto {
-		display: none;
-		transition: transform 1s;
-		animation: socialUp 1s alternate;
-
-
-	}
-
-
-
-	.mostrar {
-		display: block;
-		transition: 1s;
-		transition: transform 1s;
-		animation: socialUp 1s alternate;
-
-	}
-
-
-	/*Estilo Cadastro*/
-
-	.container__Cadastro {
-		width: 90vw;
-		height: 650px;
-	}
-
-	#step2,
-	#step3 {
-		display: none;
-	}
-
-	.container__formCadastro {
-		height: 700px !important;
-		background: var(--gradient-1);
-		color: var(--color-whitesmoke);
-	}
-
-
-	.card__cadastro {
-		text-align: center;
-		color: var(--color-orangered-100);
-		font-weight: 500;
-		margin: 15px;
-		padding: 30px;
-		background: var(--color-whitesmoke);
-	}
-
-
-
-
-	@keyframes socialUp {
-		0% {
-			transform: translatey(60px);
-
-		}
-
-
-		100% {
-			transform: translatey(0);
-		}
-	}
 
 	/*--------------------------------------------------------------
 # Footer

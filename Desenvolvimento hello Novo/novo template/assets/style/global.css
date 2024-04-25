@@ -10,7 +10,7 @@ html {
 
 :root {
   /* fonts */
-  --beneficio: Poppins;
+  --font-pop: Poppins;
   --font-montserrat-alternates: "Montserrat Alternates";
   --font-montserrat-alternates-medium: "Montserrat Alternates Medium";
   /* font sizes */
